@@ -1,0 +1,40 @@
+<p>marks works!</p>
+<div class="mat-card-container">
+    <mat-card>
+        <mat-card-content>
+            <form [formGroup]="studentMarks">
+                <p>
+                    <mat-form-field>
+                        <mat-label>Student Name</mat-label>
+                        <mat-select formControlName="studentName">
+                        <mat-option *ngFor="let list of nameList" [value]="list.studentName">{{list.studentName}}</mat-option>
+                    </mat-select>
+                    </mat-form-field>
+                </p>
+                <p>
+                    <mat-form-field>
+                        <mat-label>Maths Marks</mat-label>
+                        <input matInput type="number" placeholder="Maths Marks" formControlName="maths">
+                    </mat-form-field>
+                </p>
+                <p>
+                    <mat-form-field>
+                        <mat-label>Science Marks</mat-label>
+                        <input matInput type="number" placeholder="Maths Marks" formControlName="science">
+                    </mat-form-field>
+                </p>
+                <p>
+                    <mat-form-field>
+                        <mat-label>Social Marks</mat-label>
+                        <input matInput type="number" placeholder="Social Marks" formControlName="social">
+                    </mat-form-field>
+                </p>
+                <div class="float-end">
+                    <button mat-button color="primary" (click)="registerMarks()">Register</button>
+                    <button mat-button color="accent" type="reset">Reset</button>
+                </div>
+            </form>
+        </mat-card-content>
+    </mat-card>
+</div>
+

@@ -1,0 +1,41 @@
+<p>edit works!</p>
+
+<!-- <input type="text" [(ngModel)]="studentName">
+<input type="number" [(ngModel)]="maths">
+<input type="number" [(ngModel)]="science">
+<input type="number" [(ngModel)]="social"> -->
+<div class="mat-card-container">
+    <mat-card>
+        <mat-card-content>
+            
+<p>
+    <mat-form-field>
+        <mat-label>Student Name</mat-label>
+        <input matInput type="text" placeholder="Student Name" [(ngModel)]="studentName">
+    </mat-form-field>
+</p>
+<p>
+    <mat-form-field>
+        <mat-label>Maths Marks</mat-label>
+        <input matInput type="number" placeholder="Maths Marks" [(ngModel)]="maths">
+    </mat-form-field>
+</p>
+<p>
+    <mat-form-field>
+        <mat-label>Science Marks</mat-label>
+        <input matInput type="number" placeholder="Science Marks" [(ngModel)]="science">
+    </mat-form-field>
+</p>
+<p>
+    <mat-form-field>
+        <mat-label>Social Marks</mat-label>
+        <input matInput type="number" placeholder="Social Marks" [(ngModel)]="social">
+    </mat-form-field>
+</p>
+<div class="float-end">
+    <button mat-button color="primary" (click)="updateMarks()">Update</button>
+</div>
+
+</mat-card-content>
+</mat-card>
+</div>
