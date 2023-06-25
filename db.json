@@ -55,43 +55,36 @@
       "gender": "",
       "course": "",
       "id": 8
+    },
+    {
+      "studentName": "",
+      "dob": "",
+      "gender": "",
+      "course": "",
+      "id": 9
     }
   ],
   "marks": [
     {
-      "studentName": "Sivaa",
-      "maths": 99,
-      "science": 64,
-      "social": 99,
-      "id": 1
+      "studentName": "prabhu",
+      "maths": 55,
+      "science": 100,
+      "social": 66,
+      "id": 5
     },
     {
-      "studentName": "Ace",
-      "maths": 55,
-      "science": 54,
-      "social": 88,
-      "id": 2
+      "studentName": "Ravi",
+      "maths": 65,
+      "science": 56,
+      "social": 66,
+      "id": 6
     },
     {
       "studentName": "sanjay",
-      "maths": 76,
-      "science": 65,
-      "social": 88,
-      "id": 3
-    },
-    {
-      "studentName": "anandasiva",
-      "maths": 64,
-      "science": 64,
-      "social": 75,
-      "id": 4
-    },
-    {
-      "studentName": "",
-      "maths": "",
-      "science": "",
-      "social": "",
-      "id": 5
+      "maths": 769,
+      "science": 34,
+      "social": 98,
+      "id": 7
     }
   ]
 }

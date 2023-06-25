@@ -8,8 +8,12 @@ import { Record } from './record';
 export class RecordService {
 
   constructor(private http:HttpClient) { }
-  updateMarks(value:Record,id:any){
-    this.http.put("http://localhost:3000/marks/" + id,value )
+  updateMarks(id:any,value:Record){
+    this.http.put("http://localhost:3000/marks/" + id,value ).subscribe();
+  }
+  deleteStudentMarks(id:any){
+    const url = "http://localhost:3000/marks/"
+    this.http.delete(url + id).subscribe();
   }
 
 }

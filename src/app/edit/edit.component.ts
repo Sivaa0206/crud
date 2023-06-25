@@ -27,11 +27,11 @@ export class EditComponent implements OnInit {
     this.id = this.activatedRoute.snapshot.paramMap.get('id')
     this.http.get("http://localhost:3000/marks/" + this.id).subscribe((result:any) => {
       
-      this.studentName = result.studentName;
-      this.maths = result.maths;
-      this.science = result.science;
-      this.social = result.social;
-    } )
+      this.record.studentName = result.studentName;
+      this.record.maths = result.maths;
+      this.record.science = result.science;
+      this.record.social = result.social;
+    })
   }
 
   getStudentData(){
@@ -40,11 +40,10 @@ export class EditComponent implements OnInit {
       this.datas = result
     })
   }
-  updateMarks(){
-     //this.http.put("http://localhost:3000/marks" + this.id,value)
-
+  editMarks(){
+     this.service.updateMarks(this.id,this.record)
   }
   // marks(){
-  //   this.service.updateMarks(this.id)
-  // }
+  //    this.service.updateMarks(this.id)
+  //  }
 }

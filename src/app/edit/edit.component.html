@@ -11,29 +11,29 @@
 <p>
     <mat-form-field>
         <mat-label>Student Name</mat-label>
-        <input matInput type="text" placeholder="Student Name" [(ngModel)]="studentName">
+        <input matInput type="text" placeholder="Student Name" [(ngModel)]="record.studentName">
     </mat-form-field>
 </p>
 <p>
     <mat-form-field>
         <mat-label>Maths Marks</mat-label>
-        <input matInput type="number" placeholder="Maths Marks" [(ngModel)]="maths">
+        <input matInput type="number" placeholder="Maths Marks" [(ngModel)]="record.maths">
     </mat-form-field>
 </p>
 <p>
     <mat-form-field>
         <mat-label>Science Marks</mat-label>
-        <input matInput type="number" placeholder="Science Marks" [(ngModel)]="science">
+        <input matInput type="number" placeholder="Science Marks" [(ngModel)]="record.science">
     </mat-form-field>
 </p>
 <p>
     <mat-form-field>
         <mat-label>Social Marks</mat-label>
-        <input matInput type="number" placeholder="Social Marks" [(ngModel)]="social">
+        <input matInput type="number" placeholder="Social Marks" [(ngModel)]="record.social">
     </mat-form-field>
 </p>
 <div class="float-end">
-    <button mat-button color="primary" (click)="updateMarks()">Update</button>
+    <button mat-button color="primary" (click)="editMarks()">Update</button>
 </div>
 
 </mat-card-content>

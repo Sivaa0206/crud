@@ -11,8 +11,7 @@ const routes: Routes = [
   {path:'marklist',component:MarklistComponent},
   {path:'edit/:id',component:EditComponent},
   {path:'',redirectTo:'marklist',pathMatch:'full'}
-
-
+  
 ];
 
 @NgModule({
@@ -20,3 +19,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+   
