@@ -10,6 +10,7 @@ import { Record } from '../record';
   templateUrl: './edit.component.html',
   styleUrls: ['./edit.component.css']
 })
+
 export class EditComponent implements OnInit {
   datas: any;
   id : any;
@@ -41,7 +42,8 @@ export class EditComponent implements OnInit {
     })
   }
   editMarks(){
-     this.service.updateMarks(this.id,this.record)
+     this.service.updateMarks(this.id,this.record);
+     this.router.navigate(['/marklist']);
   }
   // marks(){
   //    this.service.updateMarks(this.id)

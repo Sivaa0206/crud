@@ -64,27 +64,5 @@
       "id": 9
     }
   ],
-  "marks": [
-    {
-      "studentName": "prabhu",
-      "maths": 55,
-      "science": 100,
-      "social": 66,
-      "id": 5
-    },
-    {
-      "studentName": "Ravi",
-      "maths": 65,
-      "science": 56,
-      "social": 66,
-      "id": 6
-    },
-    {
-      "studentName": "sanjay",
-      "maths": 769,
-      "science": 34,
-      "social": 98,
-      "id": 7
-    }
-  ]
+  "marks": []
 }
